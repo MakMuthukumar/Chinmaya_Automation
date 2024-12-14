@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-12T23:44:30.474104" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Forget Password Testcase" source="C:\Users\muthukumar\PycharmProjects\PythonProject\Test_cases\Login_Forget_Password_Testcase.robot">
+<test id="s1-t1" name="Login Forget Password Testcase" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:30.804423" level="INFO">Opening browser 'edge' to base url 'https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/'.</msg>
+<msg time="2024-12-12T23:44:31.524438" level="WARN">The msedgedriver version (130.0.2849.99) detected in PATH at C:\Users\muthukumar\AppData\Local\Programs\Python\Python313\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (131.0.2903.86); currently, msedgedriver 131.0.2903.86 is recommended for MicrosoftEdge 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-12T23:44:30.804189" elapsed="3.221014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-12T23:44:39.026010" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-12T23:44:34.025618" elapsed="5.000492"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:39.054493" level="INFO">Element 'xpath://*[contains(text(), 'Forgot Password')]' is displayed.</msg>
+<arg>xpath://*[contains(text(), 'Forgot Password')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-12T23:44:39.026516" elapsed="0.028064"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:39.055041" level="INFO">Clicking element 'xpath://*[contains(text(), 'Forgot Password')]'.</msg>
+<arg>xpath://*[contains(text(), 'Forgot Password')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:39.054879" elapsed="0.088799"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-12T23:44:49.144430" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-12T23:44:39.144070" elapsed="10.000622"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.173725" level="INFO">Element 'xpath://*[contains(text(), 'Forgot Password ?')]' is displayed.</msg>
+<arg>xpath://*[contains(text(), 'Forgot Password ?')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.145589" elapsed="0.028219"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.199245" level="INFO">Element 'xpath://*[contains(text(), 'Enter your Username to reset your password.')]' is displayed.</msg>
+<arg>xpath://*[contains(text(), 'Enter your Username to reset your password.')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.174174" elapsed="0.025168"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.219728" level="INFO">Element 'xpath://input[@placeholder='User Name']' is displayed.</msg>
+<arg>xpath://input[@placeholder='User Name']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.199651" elapsed="0.020194"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.220777" level="INFO">Clicking element 'xpath://input[@placeholder='User Name']'.</msg>
+<arg>xpath://input[@placeholder='User Name']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.220386" elapsed="0.064494"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.285914" level="INFO">Typing text 'rakesh123' into text field 'xpath://input[@placeholder='User Name']'.</msg>
+<arg>xpath://input[@placeholder='User Name']</arg>
+<arg>rakesh123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.285557" elapsed="0.103995"/>
+</kw>
+<kw name="Get_number_xpath">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.420740" level="INFO">${text} = 2</msg>
+<var>${text}</var>
+<arg>${xpath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.390535" elapsed="0.030258"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-12-12T23:44:49.421232" level="INFO">${number} = 2</msg>
+<var>${number}</var>
+<arg>${text}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.420981" elapsed="0.000288"/>
+</kw>
+<return>
+<value>${number}</value>
+<status status="PASS" start="2024-12-12T23:44:49.421353" elapsed="0.000065"/>
+</return>
+<msg time="2024-12-12T23:44:49.421580" level="INFO">${num1} = 2</msg>
+<var>${num1}</var>
+<arg>xpath://*[@id='sum1']</arg>
+<status status="PASS" start="2024-12-12T23:44:49.390105" elapsed="0.031502"/>
+</kw>
+<kw name="Get_number_xpath">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.446229" level="INFO">${text} = 6</msg>
+<var>${text}</var>
+<arg>${xpath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.422660" elapsed="0.023611"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-12-12T23:44:49.446656" level="INFO">${number} = 6</msg>
+<var>${number}</var>
+<arg>${text}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.446436" elapsed="0.000248"/>
+</kw>
+<return>
+<value>${number}</value>
+<status status="PASS" start="2024-12-12T23:44:49.446761" elapsed="0.000054"/>
+</return>
+<msg time="2024-12-12T23:44:49.446967" level="INFO">${num2} = 6</msg>
+<var>${num2}</var>
+<arg>xpath://*[@id='sum2']</arg>
+<status status="PASS" start="2024-12-12T23:44:49.421985" elapsed="0.025010"/>
+</kw>
+<kw name="add_number">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T23:44:49.447824" level="INFO">${result} = 8</msg>
+<var>${result}</var>
+<arg>${num1} + ${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.447599" elapsed="0.000255"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2024-12-12T23:44:49.447918" elapsed="0.000034"/>
+</return>
+<msg time="2024-12-12T23:44:49.448068" level="INFO">${result} = 8</msg>
+<var>${result}</var>
+<arg>${num1}</arg>
+<arg>${num2}</arg>
+<status status="PASS" start="2024-12-12T23:44:49.447301" elapsed="0.000792"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.448493" level="INFO">Clicking element 'xpath://input[@placeholder='Enter your answer']'.</msg>
+<arg>xpath://input[@placeholder='Enter your answer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.448333" elapsed="0.061541"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:49.510783" level="INFO">Typing text '8' into text field 'xpath://input[@placeholder='Enter your answer']'.</msg>
+<arg>xpath://input[@placeholder='Enter your answer']</arg>
+<arg>${result}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.510353" elapsed="0.078504"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-12T23:44:54.590019" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-12T23:44:49.589371" elapsed="5.000784"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:54.616259" level="INFO">Element 'xpath://*[contains(text(), ' Cancel ')]' is displayed.</msg>
+<arg>xpath://*[contains(text(), ' Cancel ')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-12T23:44:54.590525" elapsed="0.025815"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:54.636339" level="INFO">Element 'xpath://*[contains(text(), 'Submit')]' is displayed.</msg>
+<arg>xpath://*[contains(text(), 'Submit')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-12T23:44:54.616883" elapsed="0.019543"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:54.636918" level="INFO">Clicking element 'xpath://*[contains(text(), 'Submit')]'.</msg>
+<arg>xpath://*[contains(text(), 'Submit')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:54.636749" elapsed="0.054256"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-12T23:44:59.692078" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-12T23:44:54.691382" elapsed="5.000824"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-12T23:44:59.692870" level="INFO">Clicking element 'xpath://*[contains(text(), ' Cancel ')]'.</msg>
+<arg>xpath://*[contains(text(), ' Cancel ')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-12T23:44:59.692636" elapsed="0.082768"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-12T23:45:04.776520" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-12T23:44:59.775949" elapsed="5.000848"/>
+</kw>
+<status status="PASS" start="2024-12-12T23:44:30.802829" elapsed="33.974799"/>
+</test>
+<status status="PASS" start="2024-12-12T23:44:30.475829" elapsed="34.304013"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Forget Password Testcase">Login Forget Password Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-12T23:44:30.467377" level="WARN">Error in file 'C:\Users\muthukumar\PycharmProjects\PythonProject\Test_cases\Login_Forget_Password_Testcase.robot' on line 41: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-12-12T23:44:30.467724" level="WARN">Error in file 'C:\Users\muthukumar\PycharmProjects\PythonProject\Test_cases\Login_Forget_Password_Testcase.robot' on line 47: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-12-12T23:44:31.524438" level="WARN">The msedgedriver version (130.0.2849.99) detected in PATH at C:\Users\muthukumar\AppData\Local\Programs\Python\Python313\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (131.0.2903.86); currently, msedgedriver 131.0.2903.86 is recommended for MicrosoftEdge 131.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
