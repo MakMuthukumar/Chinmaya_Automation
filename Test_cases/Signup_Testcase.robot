@@ -7,7 +7,7 @@ Library  SeleniumLibrary
 *** Test Cases ***
 Signup Testcase
         #create webdriver    chrome  executablepath="C:\Users\muthukumar\Automation\Driver\chromedriver.exe"
-        open browser     https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/    edge
+        open browser     https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/    firefox
         sleep       5
         Click element    xpath://*[@id="kt_sign_in_form"]/a[2]/div/button/span
         sleep       5
