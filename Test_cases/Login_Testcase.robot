@@ -7,7 +7,7 @@ Library  SeleniumLibrary
 Login Testcase
         #create webdriver    chrome  executablepath="C:\Users\muthukumar\Automation\Driver\chromedriver.exe"
         #open browser     https://www.google.com/    edge
-        open browser     https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/    edge
+        open browser     https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/    firefox
         sleep       5
         Element should be visible       xpath://*[contains(text(), 'Login to your account')]
         Element should be visible       xpath://input[@placeholder='User Name']
