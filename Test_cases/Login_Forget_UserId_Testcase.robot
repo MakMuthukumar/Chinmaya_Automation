@@ -8,7 +8,7 @@ Library  SeleniumLibrary
 Login Forget UserId Testcase
         #create webdriver    chrome  executablepath="C:\Users\muthukumar\Automation\Driver\chromedriver.exe"
         #open browser     https://www.google.com/    edge
-        open browser     https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/    edge
+        open browser     https://reg-dev.cmwrcregistration.org/ChinmayaMemberRegDEV/    firefox
         sleep       5
         Element should be visible       xpath://*[contains(text(), 'Forgot User ID')]
         Click element       xpath://*[contains(text(), 'Forgot User ID')]
